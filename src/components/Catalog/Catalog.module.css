@@ -1,0 +1,13 @@
+.containerCatalog {
+    display: flex;
+    gap: 4.4vw;
+    padding-right: 4.4vw;
+    padding-left: 4.4vw;
+    padding-top: 48px;
+    padding-bottom: 52px;
+}
+
+.containerFilter {
+    background-color: burlywood;
+    width: 360px;
+}
