@@ -4,7 +4,7 @@ import NavMenu from "./Nav-menu/Nav-menu";
 
 const Header = () => {
   return (
-    <header className={s.wrapper}>
+    <header className={s.header}>
       <Logo />
       <NavMenu />
     </header>

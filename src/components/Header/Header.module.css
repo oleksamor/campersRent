@@ -1,4 +1,4 @@
-.wrapper {
+.header {
     display: flex;
     align-items: center;
     gap: calc((100vw - 535px) / 2);
