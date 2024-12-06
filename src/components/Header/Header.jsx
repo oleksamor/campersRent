@@ -1,10 +1,12 @@
 import Logo from "./Logo/Logo";
-import css from "./Header.module.css";
+import s from "./Header.module.css";
+import NavMenu from "./Nav-menu/Nav-menu";
+
 const Header = () => {
   return (
-    <header className="css.wrapper">
+    <header className={s.wrapper}>
       <Logo />
-      {/* <Navbar /> */}
+      <NavMenu />
     </header>
   );
 };
