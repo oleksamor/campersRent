@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
-import css from "./Home.module.css";
+import s from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={css.home}>
-      <h1 className={css.titleHome}>Campers of your dreams</h1>
-      <p className={css.descriptionHome}>
+    <div className={s.home}>
+      <h1 className={s.titleHome}>Campers of your dreams</h1>
+      <p className={s.descriptionHome}>
         You can find everything you want in our catalog
       </p>
-      <NavLink className={css.viewNow} to="/campers">
+      <NavLink className={s.viewNow} to="/campers">
         View Now
       </NavLink>
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import css from "./Catalog.module.css";
+import s from "./Catalog.module.css";
 import { fetchCampers } from "../../services/api";
 
 const Catalog = () => {
@@ -16,8 +16,8 @@ const Catalog = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="containerCatalog">
-      <div className="{css.containerFilter}">
+    <div className="s.containerCatalog">
+      <div className={s.containerFilter}>
         <form>
           <div>
             <label htmlFor="location">Location</label>

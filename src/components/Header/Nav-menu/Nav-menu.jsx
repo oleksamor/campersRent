@@ -11,12 +11,12 @@ const NavMenu = () => {
     <nav className={s.navmenu}>
       <ul className={s.navmenulist}>
         <li>
-          <NavLink className={buildLinkClass} to="/">
+          <NavLink to="/" className={buildLinkClass}>
             Home
           </NavLink>
         </li>
         <li className={buildLinkClass}>
-          <NavLink className={buildLinkClass} to="/catalog">
+          <NavLink to="/campers" className={buildLinkClass}>
             Catalog
           </NavLink>
         </li>
