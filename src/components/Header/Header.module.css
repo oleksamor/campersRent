@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    max-width: 1312px;
     align-items: center;
     gap: calc((100vw - 535px) / 2);
     padding: 24px 64px;
