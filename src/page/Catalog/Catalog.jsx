@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import s from "./Catalog.module.css";
-import { fetchCampers } from "../../services/api";
+import { fetchCampers } from "../../services/api.js";
 
 const Catalog = () => {
   const [campers, setCampers] = useState([]);
@@ -41,6 +41,13 @@ const Catalog = () => {
           <button type="submit">Search</button>
         </form>
       </div>
+      <ul>
+        {campers.map((camper) => (
+          <li key={camper.id}>
+            {camper.id} {camper.name}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

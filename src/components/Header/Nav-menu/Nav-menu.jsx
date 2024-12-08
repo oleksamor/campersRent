@@ -15,7 +15,7 @@ const NavMenu = () => {
             Home
           </NavLink>
         </li>
-        <li className={buildLinkClass}>
+        <li>
           <NavLink to="/campers" className={buildLinkClass}>
             Catalog
           </NavLink>
