@@ -6,3 +6,8 @@ export const fetchCampers = async () => {
   const { data } = await axios.get(`${BASE_URL}/campers`);
   return data.items;
 };
+
+export const fetchCampersById = async (id) => {
+  const { data } = await axios.get(`${BASE_URL}/campers/${id}`);
+  return data;
+};

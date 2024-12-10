@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import s from "./Catalog.module.css";
 import { fetchCampers } from "../../services/api.js";
+import { Link } from "react-router-dom";
 
 const Catalog = () => {
   const [campers, setCampers] = useState([]);
@@ -44,7 +45,9 @@ const Catalog = () => {
       <ul>
         {campers.map((camper) => (
           <li key={camper.id}>
-            {camper.id} {camper.name}
+            <Link to={camper.id.toString()}>
+              {camper.id} {camper.name}
+            </Link>
           </li>
         ))}
       </ul>
